@@ -128,8 +128,21 @@ footer .bar{
 
 @media only screen and (max-width: 600px) {
 	main{
-		background-color:#FEFF03;
-		grid-template-columns: 1fr;
-		grid-template-rows: 1fr auto;
+		background-color:#FEE228;
+	}
+
+	article{
+		grid-template-columns: auto;
+		row-gap:1em;
+	}
+
+	article .half{
+		grid-column: 1 / 3;
+	}
+
+	.header-top{
+		grid-template-columns: auto;
+		row-gap:1em;
 	}
 }
+
