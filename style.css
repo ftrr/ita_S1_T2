@@ -72,13 +72,14 @@ main{
 	display: grid;
 	grid-template-columns: 3fr 1fr;
 	flex-grow: 2;
+	row-gap: 1em;
+	column-gap: 1em;
 }
 
 article{
 	background-color: #4E4E6A;
 	display: grid;
 	flex-wrap: wrap;
-	margin-right: 1em;
 	row-gap: 1em;
 	column-gap: 1em;
 	grid-template-columns: 1fr 1fr;
@@ -113,4 +114,22 @@ footer{
 
 footer .bar{
 	background-color: #E6AF2E
+}
+
+
+@media only screen and (max-width: 768px) {
+	main{
+		background-color:#FEFF03;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr auto;
+	}
+}
+
+
+@media only screen and (max-width: 600px) {
+	main{
+		background-color:#FEFF03;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr auto;
+	}
 }
