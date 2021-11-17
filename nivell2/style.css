@@ -12,9 +12,15 @@ body{
 	min-height:100vh;
 }
 
+a{
+	text-decoration: none;
+}
+
 a:hover{
 	opacity:50%;
 }
+
+
 
 .bar{
 	height: 1em;
@@ -31,7 +37,7 @@ a:hover{
 	justify-content: space-evenly;
 }
 
-header, main, footer{
+header, footer{
 	background-color:#FDFDFD;	
 }
 
@@ -68,7 +74,6 @@ section, article, aside, footer{
 
 .header-top a{
 	color:#808080;
-	text-decoration: none;
 	list-style: none;
 	display: flex;
 	align-items: baseline;
@@ -150,10 +155,10 @@ main{
 	flex-grow: 2;
 	row-gap: 1em;
 	column-gap: 1em;
+	background-color:#D8D7D7;
 }
 
-article{
-	background-color: #4E4E6A;
+.article-container{
 	display: grid;
 	flex-wrap: wrap;
 	row-gap: 1em;
@@ -162,9 +167,6 @@ article{
 	align-content: flex-start;
 }
 
-article .half{
-	background-color: #1F6CB0;
-}
 
 article .full{
 	background-color: #70A3C4;
@@ -192,10 +194,59 @@ footer .bar{
 	background-color: #E6AF2E
 }
 
+.article{
+	display:flex;
+	background-color: #F5F1F1;
+    flex-direction: column;
+    padding: .5em;
+	font-family:sans-serif;
+	min-height: 424px;
+}
+
+.article-image{
+	overflow: hidden;
+}
+
+.article-image img{
+	
+	width: 100%;
+	height: 12em;
+	object-fit: cover;
+	
+}
+
+.article-title{
+	text-transform: uppercase;
+	font-size: inherit;
+	letter-spacing: .1em;
+	background-color: #F08080;
+	color: white;
+	padding:.8em .5em .5em .5em;
+	font-size: 1.5em;
+	word-break: break-word;
+}
+
+.article-date{
+	color: #ECDD8E;
+	position: absolute;
+	margin-top: -1.5em;
+	margin-left: .5em;
+}
+
+.article-text{
+	column-count:2;
+	margin: 1em 0;
+	color:#535353;
+}
+
+.article-more{
+	color:#808080
+}
+
 
 @media only screen and (max-width: 768px) {
 	main{
-		background-color:#FEFF03;
+		/*background-color:#FEFF03;*/
 		grid-template-columns: 1fr;
 		grid-template-rows: 1fr auto;
 	}
@@ -204,7 +255,7 @@ footer .bar{
 
 @media only screen and (max-width: 600px) {
 	main{
-		background-color:#FEE228;
+		/*background-color:#FEE228;*/
 	}
 
 	article{
@@ -219,6 +270,10 @@ footer .bar{
 	.header-top{
 		grid-template-columns: auto;
 		row-gap:1em;
+	}
+
+	.article-text{
+		column-count:1;
 	}
 }
 
