@@ -11,6 +11,11 @@ body{
 	width:100%;
 	min-height:100vh;
 }
+
+a:hover{
+	opacity:50%;
+}
+
 .bar{
 	height: 1em;
 	/*margin: 1em 0*/;
