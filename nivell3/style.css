@@ -143,6 +143,7 @@ section, article, aside, footer{
 	background-color: #9b9b9b40;
 	height: 46%;
 	width: 80%;
+	
 }
 
 .hero-title h1{
@@ -252,8 +253,8 @@ footer .bar{
 }
 
 @keyframes scale {
-	0% {opacity:0;scale:4; }
-	100% {opacity:0.5;scale:1;}
+	0% {opacity:0; scale:1.2; }
+	100% {opacity:0.5; scale:1;}
   }
 
 @keyframes position {
